@@ -27,12 +27,19 @@ namespace Projects
         private void CheckBracketsBalance(object sender, RoutedEventArgs e)
         {
             string input = InputTextBox.Text;
-            bool isBalanced = isBalanced(input);
-            ResultTextBlock.Text = isBalanced ? "Balanced" : "Not Balance"
+            bool isBalanced = IsBalanced(input);
+            ResultTextBlock.Text = isBalanced ? "Balanced" : "Not Balanced";
         }
-        private bool isBalanced(string input)
+        private bool IsBalanced(string input)
         {
-
+            int balance = 0;
+            foreach (char c in input)
+            {
+                if (c == '(') balance++;
+                if (c == ')') balance--;
+                if (balance < 0) return false;
+            }
+            return balance == 0;
         }
     }
 }

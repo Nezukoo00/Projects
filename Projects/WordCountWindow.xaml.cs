@@ -23,5 +23,16 @@ namespace Projects
         {
             InitializeComponent();
         }
+        private void CountWords(object sender, RoutedEventArgs e)
+        {
+            string input = InputTextBox.Text;
+            int wordCount = CountWordsInString(input);
+            ResultTextBlock.Text = $"Word count: {wordCount}";
+        }
+
+        private int CountWordsInString(string input)
+        {
+            return input.Split(new[] { ' ', '\t', '\n' }, System.StringSplitOptions.RemoveEmptyEntries).Length;
+        }
     }
 }
