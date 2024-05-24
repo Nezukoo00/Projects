@@ -8,7 +8,7 @@
         Title="BracketsBalanceWindow" Height="200" Width="400">
     <StackPanel Margin=" 10">
         <TextBox Name ="InputTextBox" Width=" 350" Height="30" Margin=" 5" />
-        <Button Content="Check Balance" Click="CheckBracketsbalance"/>
+        <Button Content="Check Balance" Click="CheckBracketsBalance"/>
         <TextBlock Name="ResultTextBlock" Margin="5"/>
 
 

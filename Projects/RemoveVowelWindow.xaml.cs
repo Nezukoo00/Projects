@@ -27,7 +27,7 @@ namespace Projects
         private void RemoveVowels(object sender, RoutedEventArgs e)
         {
             string input = InputTextBox.Text;
-            string result = Regex.Replace(input, "[AEIOUaeiou]", "");
+            string result = Regex.Replace(input, "[AEIOUaeiouАУЕОЭЯЮИуеаоэяию]", "");
             ResultTextBlock.Text = result;
         }
     }

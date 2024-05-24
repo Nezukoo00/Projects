@@ -28,7 +28,7 @@ namespace Projects
         {
             string input = InputTextBox.Text;
             var matches = Regex.Matches(input, @"(\w)\1");
-            ResultTextBlock.Text = string.Join(", ", matches);
+            ResultTextBlock.Text = matches.Count > 0 ? string.Join(", ", matches.Count) : "No doubles letter found";
         }
     }
 }
