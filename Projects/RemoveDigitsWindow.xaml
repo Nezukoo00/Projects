@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projects"
         mc:Ignorable="d"
-        Title="RemoveDigitsWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="RemoveDigitsWindow" Height="200" Width="400">
+    <StackPanel Margin="10">
+        <TextBox Name="InputTextBox" Width="350" Height="30" Margin="5"/>
+        <Button Content="Remove Digits" Click="RemoveDigits"/>
+        <TextBlock Name="ResultTextBlock" Margin="5"/>
+    </StackPanel>
 </Window>
