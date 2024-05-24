@@ -76,9 +76,6 @@
     <Compile Include="DoubleLettersWindow.xaml.cs">
       <DependentUpon>DoubleLettersWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FrstTask.xaml.cs">
-      <DependentUpon>FrstTask.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -113,10 +110,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DoubleLettersWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FrstTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

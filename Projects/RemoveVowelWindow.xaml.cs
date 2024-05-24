@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +23,12 @@ namespace Projects
         public RemoveVowelWindow()
         {
             InitializeComponent();
+        }
+        private void RemoveVowels(object sender, RoutedEventArgs e)
+        {
+            string input = InputTextBox.Text;
+            string result = Regex.Replace(input, "[AEIOUaeiou]", "");
+            ResultTextBlock.Text = result;
         }
     }
 }
