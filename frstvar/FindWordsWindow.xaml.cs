@@ -33,7 +33,7 @@ namespace frstvar
                 return;
             }
 
-            var words = input.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            var words = input.Split(new[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
             var longestWord = words.OrderByDescending(w => w.Length).FirstOrDefault();
             var shortestWord = words.OrderBy(w => w.Length).FirstOrDefault();
 

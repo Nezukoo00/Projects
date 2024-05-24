@@ -31,7 +31,9 @@ namespace Projects
             ResultTextBlock.Text = isBalanced ? "Balanced" : "Not Balanced";
         }
         private bool IsBalanced(string input)
-        {
+        { if (string.IsNullOrWhiteSpace(input)) return false;
+          bool containsDigit = input.Any(char.IsDigit);
+            if(!containsDigit) return false;
             int balance = 0;
             foreach (char c in input)
             {
@@ -41,5 +43,6 @@ namespace Projects
             }
             return balance == 0;
         }
+        
     }
 }
