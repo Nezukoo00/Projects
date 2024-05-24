@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="300">
     <StackPanel>
-        <Button Content =" Found Double Letters" HorizontalAlignment="Center" Width="136" Click="Button_Click"/>
+        <Button Content =" Find Words"  Width="136" Click="Button_Click"/>
+        <Button Content ="Changes Vowel into *"  Width="136" Click="Button_Click1"/>
     </StackPanel>
 </Window>

@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="FindWordsWindow" Height="200" Width="450">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <TextBox x:Name="InputTextBox" Width="350" Height="30" Margin="5"/>
+            <Button Content="Find Words" Click="OnFindWordsClick" Width="150" Height="30" Margin="5"/>
+            <TextBlock x:Name="LongestWordTextBlock" Margin="5"/>
+            <TextBlock x:Name="ShortestWordTextBlock" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>

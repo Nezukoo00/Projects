@@ -24,5 +24,17 @@ namespace frstvar
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new FindWordsWindow();
+            window.Show();
+        }
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            var window = new RemoveVowelWindow();
+            window.Show();
+        }
     }
 }

@@ -8,10 +8,9 @@
         Title="RemoveVowelWindow" Height="200" Width="400">
     <Grid>
         <StackPanel Margin="10">
-            <TextBox Name="InputTextBox" Width="350" Height="30" Margin="5"/>
-            <Button Content="Remove Vowels" Click="RemoveVowels"/>
-            <TextBlock Name="ResultTextBlock" Margin="5"/>
+            <TextBox x:Name="InputTextBox" Width="350" Height="30" Margin="5" />
+            <Button Content="Replace Vowels" Click="OnReplaceVowelsClick" Width="150" Height="30" Margin="5"/>
+            <TextBlock x:Name="ResultTextBlock" Margin="5"/>
         </StackPanel>
-
     </Grid>
 </Window>

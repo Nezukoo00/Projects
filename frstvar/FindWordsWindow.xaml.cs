@@ -23,5 +23,23 @@ namespace frstvar
         {
             InitializeComponent();
         }
+        private void OnFindWordsClick(object sender, RoutedEventArgs e)
+        {
+            string input = InputTextBox.Text;
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                LongestWordTextBlock.Text = "Please enter a valid text.";
+                ShortestWordTextBlock.Text = string.Empty;
+                return;
+            }
+
+            var words = input.Split(new[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            var longestWord = words.OrderByDescending(w => w.Length).FirstOrDefault();
+            var shortestWord = words.OrderBy(w => w.Length).FirstOrDefault();
+
+            LongestWordTextBlock.Text = $"Longest Word: {longestWord}";
+            ShortestWordTextBlock.Text = $"Shortest Word: {shortestWord}";
+        }
     }
 }
+
