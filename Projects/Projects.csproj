@@ -59,10 +59,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="BracketsBalanceWindow.xaml.cs">
+      <DependentUpon>BracketsBalanceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveDigitsWindow.xaml.cs">
+      <DependentUpon>RemoveDigitsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveVowelWindow.xaml.cs">
+      <DependentUpon>RemoveVowelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WordCountWindow.xaml.cs">
+      <DependentUpon>WordCountWindow.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoubleLettersWindow.xaml.cs">
+      <DependentUpon>DoubleLettersWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FrstTask.xaml.cs">
       <DependentUpon>FrstTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -90,7 +108,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="BracketsBalanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DoubleLettersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FrstTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RemoveDigitsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RemoveVowelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WordCountWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
