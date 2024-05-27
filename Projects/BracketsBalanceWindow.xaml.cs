@@ -48,7 +48,7 @@ namespace Projects
                     balance++;
                     if ( i+ 1 < input.Length && input[i+1] != ')')
                     {
-                        hasContentBetweenBrekets = false;
+                        hasContentBetweenBrekets = true;
                     }
                 }
                 else if (ch == ')')
@@ -61,7 +61,7 @@ namespace Projects
                 }
                 else if(!char.IsWhiteSpace(ch) && balance < 0)
                 {
-                    hasContentBetweenBrekets = false;
+                    hasContentBetweenBrekets = true;
                 }
 
             }
